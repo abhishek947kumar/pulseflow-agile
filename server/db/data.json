@@ -1,0 +1,695 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Alex Rivera",
+      "email": "alex.rivera@pulseflow.io",
+      "role": "Staff Product Manager",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+      "colorAccent": "#6366F1",
+      "passwordHash": "$2b$10$HQiA3qV/Zbq2RU7aCyGi6.ts0VtALVo/7bJE.WN1RyxZHKG6CN7Yq"
+    },
+    {
+      "id": "usr-2",
+      "name": "Sarah Chen",
+      "email": "sarah.chen@pulseflow.io",
+      "role": "Lead Full-Stack Architect",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=256&q=80",
+      "colorAccent": "#06B6D4",
+      "passwordHash": "$2b$10$HQiA3qV/Zbq2RU7aCyGi6.ts0VtALVo/7bJE.WN1RyxZHKG6CN7Yq"
+    },
+    {
+      "id": "usr-3",
+      "name": "Marcus Vance",
+      "email": "marcus.vance@pulseflow.io",
+      "role": "Principal UI/UX Designer",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+      "colorAccent": "#F59E0B",
+      "passwordHash": "$2b$10$HQiA3qV/Zbq2RU7aCyGi6.ts0VtALVo/7bJE.WN1RyxZHKG6CN7Yq"
+    },
+    {
+      "id": "usr-4",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@pulseflow.io",
+      "role": "DevOps & Reliability Engineer",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&q=80",
+      "colorAccent": "#10B981",
+      "passwordHash": "$2b$10$HQiA3qV/Zbq2RU7aCyGi6.ts0VtALVo/7bJE.WN1RyxZHKG6CN7Yq"
+    },
+    {
+      "id": "usr-5",
+      "name": "David Kim",
+      "email": "david.kim@pulseflow.io",
+      "role": "Senior Frontend Engineer",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&q=80",
+      "colorAccent": "#EC4899",
+      "passwordHash": "$2b$10$HQiA3qV/Zbq2RU7aCyGi6.ts0VtALVo/7bJE.WN1RyxZHKG6CN7Yq"
+    }
+  ],
+  "boards": [
+    {
+      "id": "board-pulseflow-2026",
+      "title": "PulseFlow 2026 Core Platform & Cloud Migration",
+      "description": "Sprint 24: Real-time collaborative kanban, task time-tracking, and executive workflow metrics.",
+      "key": "PF-26",
+      "ownerId": "usr-1",
+      "createdAt": "2026-09-15T15:33:11.200Z"
+    },
+    {
+      "id": "board-mobile-v3",
+      "title": "Mobile App v3.0 Native Experience",
+      "description": "React Native & Offline sync architecture for iOS and Android releases.",
+      "key": "MOB",
+      "ownerId": "usr-3",
+      "createdAt": "2026-09-22T15:33:11.200Z"
+    }
+  ],
+  "columns": [
+    {
+      "id": "col-backlog",
+      "boardId": "board-pulseflow-2026",
+      "title": "Backlog",
+      "position": 0,
+      "colorAccent": "#64748B"
+    },
+    {
+      "id": "col-todo",
+      "boardId": "board-pulseflow-2026",
+      "title": "To Do (Pending)",
+      "position": 1,
+      "colorAccent": "#3B82F6"
+    },
+    {
+      "id": "col-progress",
+      "boardId": "board-pulseflow-2026",
+      "title": "In Progress (Ongoing)",
+      "position": 2,
+      "colorAccent": "#F59E0B"
+    },
+    {
+      "id": "col-review",
+      "boardId": "board-pulseflow-2026",
+      "title": "In Review & QA",
+      "position": 3,
+      "colorAccent": "#8B5CF6"
+    },
+    {
+      "id": "col-completed",
+      "boardId": "board-pulseflow-2026",
+      "title": "Completed (Done)",
+      "position": 4,
+      "colorAccent": "#10B981"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-101",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-progress",
+      "title": "Real-time WebSocket event bus & reconnection jitter",
+      "description": "Implement bi-directional event dispatching with exponential backoff and message acknowledgement for collaborative state updates.",
+      "priority": "urgent",
+      "assigneeId": "usr-2",
+      "reporterId": "usr-1",
+      "estimatedHours": 12,
+      "timeSpentSeconds": 19800,
+      "dueDate": "2026-09-30",
+      "position": 0,
+      "tags": [
+        {
+          "name": "Backend",
+          "color": "#6366F1"
+        },
+        {
+          "name": "WebSocket",
+          "color": "#06B6D4"
+        },
+        {
+          "name": "Real-time",
+          "color": "#F43F5E"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-1",
+          "title": "Setup WS heartbeat ping/pong",
+          "completed": true
+        },
+        {
+          "id": "sub-2",
+          "title": "Implement room broadcast filtering",
+          "completed": true
+        },
+        {
+          "id": "sub-3",
+          "title": "Handle client reconnect buffer flush",
+          "completed": false
+        },
+        {
+          "id": "sub-4",
+          "title": "Write load testing benchmark",
+          "completed": false
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-1",
+          "userId": "usr-1",
+          "content": "Sarah, make sure we have fallbacks in case proxy closes idle sockets after 60s.",
+          "createdAt": "2026-09-29T11:33:11.199Z"
+        },
+        {
+          "id": "cmt-2",
+          "userId": "usr-2",
+          "content": "Added 25s ping heartbeats, testing smooth failover now!",
+          "createdAt": "2026-09-29T13:33:11.199Z"
+        }
+      ]
+    },
+    {
+      "id": "tsk-102",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-progress",
+      "title": "Executive Analytics & D3.js Sprint Burndown Visualization",
+      "description": "Design and render interactive burndown curves, team velocity metrics, and cycle-time distribution with smooth hover tooltips.",
+      "priority": "high",
+      "assigneeId": "usr-5",
+      "reporterId": "usr-1",
+      "estimatedHours": 16,
+      "timeSpentSeconds": 28800,
+      "dueDate": "2026-10-01",
+      "position": 1,
+      "tags": [
+        {
+          "name": "Frontend",
+          "color": "#EC4899"
+        },
+        {
+          "name": "D3.js",
+          "color": "#F59E0B"
+        },
+        {
+          "name": "Analytics",
+          "color": "#10B981"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-5",
+          "title": "Compute ideal vs actual trajectory coordinates",
+          "completed": true
+        },
+        {
+          "id": "sub-6",
+          "title": "Add animated SVG path drawing",
+          "completed": true
+        },
+        {
+          "id": "sub-7",
+          "title": "Crosshair inspection tooltip with date/points",
+          "completed": true
+        },
+        {
+          "id": "sub-8",
+          "title": "Export report to CSV/PNG",
+          "completed": false
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-3",
+          "userId": "usr-3",
+          "content": "The gradient fill under the burndown line looks slick! Check contrast in light mode too.",
+          "createdAt": "2026-09-29T10:33:11.199Z"
+        }
+      ]
+    },
+    {
+      "id": "tsk-103",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-todo",
+      "title": "JWT Authentication & Role-Based Access Control (RBAC)",
+      "description": "Implement secure Bearer token authentication, refresh token rotation, password hashing with bcrypt, and session validation.",
+      "priority": "high",
+      "assigneeId": "usr-2",
+      "reporterId": "usr-4",
+      "estimatedHours": 8,
+      "timeSpentSeconds": 7200,
+      "dueDate": "2026-10-02",
+      "position": 0,
+      "tags": [
+        {
+          "name": "Security",
+          "color": "#EF4444"
+        },
+        {
+          "name": "Auth",
+          "color": "#6366F1"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-9",
+          "title": "Generate signed JWT with user claims",
+          "completed": true
+        },
+        {
+          "id": "sub-10",
+          "title": "Protected API route middleware verification",
+          "completed": true
+        },
+        {
+          "id": "sub-11",
+          "title": "Implement quick persona switcher for recruiters",
+          "completed": false
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "tsk-104",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-todo",
+      "title": "Active Task Stopwatch & Pomodoro Floating Ticker",
+      "description": "Build persistent global timer widget with play/pause, duration auto-accumulation, session notes, and audio chime when Pomodoro ends.",
+      "priority": "medium",
+      "assigneeId": "usr-3",
+      "reporterId": "usr-1",
+      "estimatedHours": 6,
+      "timeSpentSeconds": 3600,
+      "dueDate": "2026-10-03",
+      "position": 1,
+      "tags": [
+        {
+          "name": "UX/UI",
+          "color": "#F59E0B"
+        },
+        {
+          "name": "Timer",
+          "color": "#06B6D4"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-12",
+          "title": "Synchronize running timer in localStorage",
+          "completed": true
+        },
+        {
+          "id": "sub-13",
+          "title": "Create Web Audio synthesizer for chime",
+          "completed": false
+        },
+        {
+          "id": "sub-14",
+          "title": "Log time slice to task history upon stop",
+          "completed": false
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "tsk-105",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-todo",
+      "title": "Interactive Drag-and-Drop Kanban Columns with Micro-animations",
+      "description": "Refined dragging feel with glassmorphic ghost card, drop target highlights, auto-scroll on column edges, and keyboard accessible reorder.",
+      "priority": "urgent",
+      "assigneeId": "usr-5",
+      "reporterId": "usr-3",
+      "estimatedHours": 10,
+      "timeSpentSeconds": 0,
+      "dueDate": "2026-09-30",
+      "position": 2,
+      "tags": [
+        {
+          "name": "Frontend",
+          "color": "#EC4899"
+        },
+        {
+          "name": "Animation",
+          "color": "#8B5CF6"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-15",
+          "title": "HTML5 Drag & Drop handlers with smooth transition",
+          "completed": false
+        },
+        {
+          "id": "sub-16",
+          "title": "Sound feedback on drop",
+          "completed": false
+        },
+        {
+          "id": "sub-17",
+          "title": "Confetti explosion upon dropping into Completed",
+          "completed": false
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "tsk-106",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-review",
+      "title": "Automated CI/CD Pipeline & Zero-Downtime Deployment",
+      "description": "Configure GitHub Actions workflow for linting, testing, Docker container builds, and deployment verification.",
+      "priority": "medium",
+      "assigneeId": "usr-4",
+      "reporterId": "usr-2",
+      "estimatedHours": 8,
+      "timeSpentSeconds": 27000,
+      "dueDate": "2026-09-29",
+      "position": 0,
+      "tags": [
+        {
+          "name": "DevOps",
+          "color": "#10B981"
+        },
+        {
+          "name": "Docker",
+          "color": "#06B6D4"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-18",
+          "title": "Write multi-stage Dockerfile",
+          "completed": true
+        },
+        {
+          "id": "sub-19",
+          "title": "Setup healthcheck endpoint /api/health",
+          "completed": true
+        },
+        {
+          "id": "sub-20",
+          "title": "Verify staging rollout",
+          "completed": true
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-4",
+          "userId": "usr-4",
+          "content": "Pipeline green across all checks. Ready for final peer sign-off.",
+          "createdAt": "2026-09-29T07:33:11.199Z"
+        }
+      ]
+    },
+    {
+      "id": "tsk-107",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-review",
+      "title": "Design System Typography & Glassmorphism Theme Tokens",
+      "description": "Curate dark luxury obsidian theme with vibrant status colors, custom scrollbars, and modern typography using Plus Jakarta Sans.",
+      "priority": "low",
+      "assigneeId": "usr-3",
+      "reporterId": "usr-1",
+      "estimatedHours": 6,
+      "timeSpentSeconds": 21600,
+      "dueDate": "2026-09-28",
+      "position": 1,
+      "tags": [
+        {
+          "name": "Design System",
+          "color": "#8B5CF6"
+        },
+        {
+          "name": "CSS",
+          "color": "#06B6D4"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-21",
+          "title": "Define HSL color palette and dark mode variables",
+          "completed": true
+        },
+        {
+          "id": "sub-22",
+          "title": "Create badge and pill component tokens",
+          "completed": true
+        },
+        {
+          "id": "sub-23",
+          "title": "Test across mobile and 4K displays",
+          "completed": true
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "tsk-108",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-completed",
+      "title": "Initial Database Modeling (PostgreSQL & MongoDB Schemas)",
+      "description": "Architect normalized relational tables for PostgreSQL and document schema design for MongoDB collections.",
+      "priority": "high",
+      "assigneeId": "usr-2",
+      "reporterId": "usr-1",
+      "estimatedHours": 8,
+      "timeSpentSeconds": 28800,
+      "dueDate": "2026-09-26",
+      "position": 0,
+      "tags": [
+        {
+          "name": "Database",
+          "color": "#F59E0B"
+        },
+        {
+          "name": "PostgreSQL",
+          "color": "#3B82F6"
+        },
+        {
+          "name": "Architecture",
+          "color": "#10B981"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-24",
+          "title": "Draft schema.sql with indexes and foreign keys",
+          "completed": true
+        },
+        {
+          "id": "sub-25",
+          "title": "Draft mongo-models.js for Mongoose",
+          "completed": true
+        },
+        {
+          "id": "sub-26",
+          "title": "Build fast zero-dependency local persistent store",
+          "completed": true
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-5",
+          "userId": "usr-1",
+          "content": "Clean architecture! Recruiters can review both PostgreSQL and Mongo implementations directly in the repository.",
+          "createdAt": "2026-09-27T15:33:11.199Z"
+        }
+      ]
+    },
+    {
+      "id": "tsk-109",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-completed",
+      "title": "Project Kickoff & Technical Requirements Specification",
+      "description": "Establish sprint velocity targets, stakeholder milestones, and architecture design documents.",
+      "priority": "medium",
+      "assigneeId": "usr-1",
+      "reporterId": "usr-1",
+      "estimatedHours": 5,
+      "timeSpentSeconds": 18000,
+      "dueDate": "2026-09-24",
+      "position": 1,
+      "tags": [
+        {
+          "name": "Planning",
+          "color": "#64748B"
+        },
+        {
+          "name": "Agile",
+          "color": "#6366F1"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-27",
+          "title": "Define user personas (PM, Dev, Designer, QA)",
+          "completed": true
+        },
+        {
+          "id": "sub-28",
+          "title": "Set sprint velocity goals (40 points)",
+          "completed": true
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "tsk-110",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-backlog",
+      "title": "Slack & Webhook Notification Integration",
+      "description": "Allow teams to trigger outbound webhooks when tasks transition across columns or timers exceed estimated hours.",
+      "priority": "low",
+      "assigneeId": "usr-4",
+      "reporterId": "usr-1",
+      "estimatedHours": 10,
+      "timeSpentSeconds": 0,
+      "dueDate": "2026-10-09",
+      "position": 0,
+      "tags": [
+        {
+          "name": "Integrations",
+          "color": "#8B5CF6"
+        },
+        {
+          "name": "Webhooks",
+          "color": "#F59E0B"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-29",
+          "title": "Define webhook payload spec",
+          "completed": false
+        },
+        {
+          "id": "sub-30",
+          "title": "Add retry queue for transient HTTP 5xx",
+          "completed": false
+        }
+      ],
+      "comments": []
+    },
+    {
+      "id": "tsk-111",
+      "boardId": "board-pulseflow-2026",
+      "columnId": "col-backlog",
+      "title": "AI Sprint Copilot: Task Breakdown & Estimation Suggester",
+      "description": "Integrate LLM assistant to auto-suggest checklist subtasks and story points based on task title and description.",
+      "priority": "medium",
+      "assigneeId": "usr-2",
+      "reporterId": "usr-3",
+      "estimatedHours": 14,
+      "timeSpentSeconds": 0,
+      "dueDate": "2026-10-13",
+      "position": 1,
+      "tags": [
+        {
+          "name": "AI / Copilot",
+          "color": "#EC4899"
+        },
+        {
+          "name": "Innovation",
+          "color": "#06B6D4"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "sub-31",
+          "title": "Design prompt templates for task decomposition",
+          "completed": false
+        },
+        {
+          "id": "sub-32",
+          "title": "Add 1-click apply checklist items UI",
+          "completed": false
+        }
+      ],
+      "comments": []
+    }
+  ],
+  "timeLogs": [
+    {
+      "id": "log-1",
+      "taskId": "tsk-101",
+      "userId": "usr-2",
+      "durationSeconds": 10800,
+      "startedAt": "2026-09-28T19:33:11.200Z",
+      "endedAt": "2026-09-28T22:33:11.200Z",
+      "note": "Built WebSocket server wrapper and heartbeat ping/pong mechanism"
+    },
+    {
+      "id": "log-2",
+      "taskId": "tsk-101",
+      "userId": "usr-2",
+      "durationSeconds": 9000,
+      "startedAt": "2026-09-29T09:33:11.200Z",
+      "endedAt": "2026-09-29T12:03:11.200Z",
+      "note": "Broadcast channels and reconnect buffer tests"
+    },
+    {
+      "id": "log-3",
+      "taskId": "tsk-102",
+      "userId": "usr-5",
+      "durationSeconds": 14400,
+      "startedAt": "2026-09-29T00:33:11.200Z",
+      "endedAt": "2026-09-29T04:33:11.200Z",
+      "note": "Integrated D3 coordinates for Burndown line charts"
+    },
+    {
+      "id": "log-4",
+      "taskId": "tsk-102",
+      "userId": "usr-5",
+      "durationSeconds": 14400,
+      "startedAt": "2026-09-29T07:33:11.200Z",
+      "endedAt": "2026-09-29T11:33:11.200Z",
+      "note": "Added interactive hover tooltips and velocity calculations"
+    },
+    {
+      "id": "log-5",
+      "taskId": "tsk-106",
+      "userId": "usr-4",
+      "durationSeconds": 27000,
+      "startedAt": "2026-09-29T03:33:11.200Z",
+      "endedAt": "2026-09-29T11:03:11.200Z",
+      "note": "Docker multi-stage build configuration and CI pipeline"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "boardId": "board-pulseflow-2026",
+      "userId": "usr-2",
+      "userName": "Sarah Chen",
+      "action": "moved_task",
+      "details": "moved \"Real-time WebSocket event bus\" to In Progress (Ongoing)",
+      "createdAt": "2026-09-29T13:33:11.200Z"
+    },
+    {
+      "id": "act-2",
+      "boardId": "board-pulseflow-2026",
+      "userId": "usr-5",
+      "userName": "David Kim",
+      "action": "completed_subtask",
+      "details": "checked off \"Crosshair inspection tooltip\" on Analytics visualization",
+      "createdAt": "2026-09-29T12:33:11.200Z"
+    },
+    {
+      "id": "act-3",
+      "boardId": "board-pulseflow-2026",
+      "userId": "usr-4",
+      "userName": "Elena Rostova",
+      "action": "logged_time",
+      "details": "logged 7.5 hours on Automated CI/CD Pipeline",
+      "createdAt": "2026-09-29T10:33:11.200Z"
+    },
+    {
+      "id": "act-4",
+      "boardId": "board-pulseflow-2026",
+      "userId": "usr-1",
+      "userName": "Alex Rivera",
+      "action": "created_task",
+      "details": "created task \"AI Sprint Copilot: Task Breakdown\"",
+      "createdAt": "2026-09-29T03:33:11.200Z"
+    }
+  ],
+  "activeTimers": {}
+}
