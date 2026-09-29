@@ -15,6 +15,19 @@
 
 ---
 
+## 📌 About the Project
+
+**PulseFlow** was engineered to bridge the gap between simple, static todo lists and modern enterprise-grade Agile platforms like Linear, Jira, and Asana. Cross-functional engineering teams often struggle with disjointed task tracking, lack of real-time collaborative synchronization, opaque velocity metrics, and repetitive administrative overhead like writing daily standup updates.
+
+PulseFlow solves these core challenges by unifying:
+1. **Real-Time Collaborative Execution**: Low-latency bi-directional WebSocket event bus synchronizing card movements, column transitions, and Figma-style live collaborator presence indicators across multiple concurrent browser sessions.
+2. **Mathematical Sprint Intelligence**: Custom D3.js v7 sprint burndown trajectories comparing remaining effort against ideal velocity curves, accompanied by Chart.js workload distributions and engineer velocity metrics.
+3. **AI-Powered Agile Automation**: Heuristic & LLM-ready task decomposition (auto-generating technical subtasks, story points, and domain tags) and 1-click automated Daily Standup generation (*Yesterday*, *Today*, *Blockers*) derived directly from active timer session logs.
+4. **Embedded Precision Time Tracking**: Floating live stopwatch ticker and 25-minute Pomodoro focus sprints with animated soundwave visualizers and zero-dependency Web Audio API sound synthesis.
+5. **Enterprise-Grade DevOps & Persistence**: Production multi-stage Docker containerization, indexed PostgreSQL relational DDL with cascading rules, MongoDB models, and an atomic zero-config file database for 30-second local onboarding.
+
+---
+
 ## 🏗️ System Architecture
 
 ```mermaid
