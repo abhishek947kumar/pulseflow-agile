@@ -199,7 +199,7 @@ pulseflow-agile/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/pulseflow-agile.git
+   git clone https://github.com/abhishek947kumar/pulseflow-agile.git
    cd pulseflow-agile
    ```
 
