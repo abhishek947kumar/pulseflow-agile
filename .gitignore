@@ -38,3 +38,6 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Personal showcase / marketing notes
+LINKEDIN_POST.md
